@@ -1,0 +1,41 @@
+<!--miniprogram/pages/detail/detail.wxml-->
+<view class="detail">
+  <!-- <mp-toptips msg="{{success}}" type="success" show="{{successShow}}"></mp-toptips>
+  <mp-toptips msg="{{error}}" type="error" show="{{errorShow}}"></mp-toptips> -->
+  <!-- <image class="cover" src="{{item.src}}" mode="aspectFill" />
+  <view class="mask"></view> -->
+  <view class="img-box">
+    <image src="{{item.src}}" class="main-img" mode="widthFix" bindlongtap="saveImg" bindtap="preview"></image>
+
+    <!-- <view class="line"></view> -->
+    <view class="name">{{item.name}}
+      <view class="add">
+        <view class="like" bindtap="clickLike" wx:if="{{showLike}}" >
+          <!-- <image src="../../images/icon/like.png" class="like-icon"></image>like</view> -->
+          <image src="../../images/icon/like.png" class="like-icon"></image>点赞
+        </view>
+        <view class="liked" bindtap="clickLike" wx:elif="{{!showLike}}" >
+          <!-- <image src="../../images/icon/right.png" class="liked-icon"></image>liked</view> -->
+          <image src="../../images/icon/liked.png" class="liked-icon"></image>点赞
+        </view>
+        <view class="collection" bindtap="clickColl" wx:if="{{!showCollect}}">
+          <!-- <image src="../../images/icon/weishoucang.png" class="coll-icon"></image>
+        加入收藏夹</view> -->
+          <image src="../../images/icon/star.png" class="coll-icon"></image>收藏
+        </view>
+        <view class="ready-collection" bindtap="clickColl" wx:else="{{showCollect}}">
+          <image src="../../images/icon/redstar.png" class="ready-coll-icon"></image>收藏
+        </view>
+      </view>
+    </view>
+    <view class="author">作者: {{item.author}}</view>
+    <button class="share" open-type="share">Share分享</button>
+    <view class="more">更多图片</view>
+    <swiper autoplay="true" circular="true" interval="4800" duration="900" class="swiper-box" display-multiple-items="3">
+      <swiper-item wx:for="{{img}}" wx:key="index">
+        <image src="{{item.src}}" class="swiper-item" data-item="{{item}}" bindtap="detailData">
+        </image>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

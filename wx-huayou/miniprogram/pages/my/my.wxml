@@ -1,0 +1,33 @@
+<!--miniprogram/pages/my/my.wxml-->
+<view class="my">
+  <view class="head">
+    <open-data type="userAvatarUrl" class="user-head"></open-data>
+    <open-data type="userNickName" class="user-name"></open-data>
+    <view class="user-member">普通会员</view>
+  </view>
+  <mp-cells>
+    <mp-cell link url="../../pages/myCollection/myCollection" hover value="我的收藏" ext-class="top">
+      <image slot="title" src="../../images/icon/coll.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </mp-cell>
+    <mp-cell link url="../../pages/like/like" hover value="我的点赞">
+      <image slot="title" src="../../images/icon/zan.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </mp-cell>
+    <mp-cell link url="../../pages/history/history" hover value="浏览记录">
+      <image slot="title" src="../../images/icon/record.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </mp-cell>
+  </mp-cells>
+  <mp-cells>
+    <mp-cell link url="../../pages/upload/upload" hover value="上传" ext-class="upload" wx:if="{{openID==='oA_3j5I_Na-ArbCADydKzLAPtzEA'}}">
+      <image slot="title" src="../../images/icon/upload.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </mp-cell>
+  </mp-cells>
+
+  <mp-cells ext-class="share">
+    <mp-cell link url="../../pages/share/share" hover value="分享">
+      <image slot="title" src="../../images/icon/share.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </mp-cell>
+    <mp-cell link url="../../pages/about/about" hover value="关于">
+      <image slot="title" src="../../images/icon/help.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </mp-cell>
+  </mp-cells>
+</view>

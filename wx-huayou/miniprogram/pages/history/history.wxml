@@ -1,0 +1,3 @@
+<!--miniprogram/pages/history/history.wxml-->
+<view class="nullHistory" wx:if="{{img.length === 0}}">您的浏览历史记录为空</view>
+<image wx:for="{{img}}" wx:key="index" src="{{item.src}}"  class="img" data-item="{{item}}" bindtap="detailData" />

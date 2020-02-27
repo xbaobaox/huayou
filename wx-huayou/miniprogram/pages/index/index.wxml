@@ -1,0 +1,19 @@
+<!--miniprogram/pages/index/index.wxml-->
+<view class="index">
+  <view class="index-bar">
+    <view class="indexbar-item {{index == x ? 'selected' : ''}}" wx:for="{{indexBar}}" wx:key="index" data-index="{{index}}" data-type="{{item.type}}" bindtap="selected">{{item.name}}
+    </view>
+  </view>
+  <view class="img-box">
+    <image wx:for="{{filterImg}}" wx:key="index" class="img-item" src="{{item.src}}" bindtap="detailData" data-item="{{item}}" lazy-load="true">
+    </image>
+    <!-- <view wx:for="{{filterImg}}" wx:key="index" class="img-item" 
+    style="background-image:url('{{item.src}}')"
+    bindtap="detailData" data-item="{{item}}">
+    </view> -->
+  </view>
+  <!-- <mp-loading duration="{{1000}}" ext-class="demo1" type="dot-gray" show="{{show}}" animated="true"></mp-loading> -->
+  <view>
+    <mp-loading type="dot-gray" show="{{show}}" ext-class="loading"></mp-loading>
+  </view>
+</view>

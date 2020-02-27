@@ -1,0 +1,25 @@
+/* miniprogram/pages/myCollection/myCollection.wxss */
+@import "../../weui/weui-wxss/dist/style/weui.wxss";
+
+.nullColl {
+  color:#555;
+  font-size: 40rpx;
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+.img-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img {
+  width: 375rpx;
+  height: 375rpx;
+  background-size: 100%;
+  background-position: center;
+}
+
+.delButton {
+  width: 50%;
+}

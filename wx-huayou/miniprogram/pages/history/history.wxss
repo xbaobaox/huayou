@@ -1,0 +1,13 @@
+/* miniprogram/pages/history/history.wxss */
+
+.nullHistory {
+  color: #555;
+  font-size: 40rpx;
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+.img {
+  width: 250rpx;
+  height: 250rpx;
+}

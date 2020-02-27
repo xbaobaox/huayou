@@ -1,0 +1,60 @@
+<!--miniprogram/pages/store/store.wxml-->
+<view class="mask">
+  <view class="style_top"></view>
+  <view class="style_bott"></view>
+</view>
+<swiper indicator-dots="true" autoplay="true" interval="4000" duration="1000" class="swiper">
+  <swiper-item>
+    <image src="../../images/store/swiper1.jpg" class="image"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="../../images/store/swiper2.jpg" class="image"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="../../images/store/swiper3.jpg" class="image"></image>
+  </swiper-item>
+</swiper>
+
+<view>
+  <text class="counts">您的积分:</text>
+  <text class="counts">0</text>
+</view>
+<view class="shop_title">全部商品</view>
+<view class="box">
+  <view class="cont" bindtap="openConfirm" wx:for="{{stores}}" wx:key="index" data-item="{{item}}">
+    <image src='{{item.src}}' class="cont_image"></image>
+    <view class="title">{{item.name}}</view>
+    <view class="bottom">
+      <text>余<text>0</text></text>
+      <text class="total">{{item.count}}积分</text>
+    </view>
+  </view>
+</view>
+<mp-dialog show="{{show}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}" ext-class="half-screen">
+  <view class="showStyle">
+    <view class="goods-head">
+      <image src="{{goodsImg}}" class="goods-img" mode="aspectFill"></image>
+      <view class="goods-detail">
+        <view class="goods-name">{{goodsName}}</view>
+        <view class="need-num">{{goodsCount}}积分</view>
+        <view class="surplus">剩余20件</view>
+      </view>
+    </view>
+    <view class="all-num">
+      <view class="num">我的总积分</view>
+      <view class="num">{{count}}积分</view>
+    </view>
+    <view class="compute-box">
+      <view class="compute-name">数量</view>
+      <view class="compute">
+        <view bindtap="sub" class="sub">-</view>
+        <view class="computed">{{compute}}</view>
+        <view bindtap="add" class="add">+</view>
+      </view>
+    </view>
+    <view class="expend-box">
+    <view class="expend-name">消耗积分数</view>
+    <view class="expend">-{{expend}}积分</view>
+    </view>
+  </view>
+</mp-dialog>

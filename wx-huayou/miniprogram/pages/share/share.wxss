@@ -1,0 +1,17 @@
+/* miniprogram/pages/share/share.wxss */
+page{
+  display: flex;
+  justify-content: center;
+  flex-direction: column
+}
+.title{
+  text-align: center;
+  font-size: 40rpx;
+  color:#fff;
+  background-color: #FB7299;
+  margin: 30rpx;
+}
+image{
+  margin: 0 auto;
+  padding-top: 30rpx;
+}

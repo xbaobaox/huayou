@@ -1,0 +1,34 @@
+<!--miniprogram/pages/upload/upload.wxml-->
+<view class="submit-box">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view for="name" class="name-label">
+      作品名称
+    </view>
+    <input placeholder="请输入名称" id="name" name="name" />
+    <view class="author-lable">
+      作者姓名:
+    </view>
+    <input placeholder="请输入作者姓名" id="author" name="author" />
+    <view class="type-label">
+      作品类型:
+    </view>
+    <radio-group name="type" class="type">
+      <radio wx:for-items="{{radio}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}" class="type-list" color="#FB7299">
+        {{item.value}}
+      </radio>
+    </radio-group>
+
+    <view>
+      <mp-cells>
+        <mp-cell>
+          <mp-uploader bindfail="uploadError" bindsuccess="uploadSuccess" select="{{selectFile}}" upload="{{uploadFile}}" files="{{files}}" max-count="1" title="图片上传" tips="选择您的图片">
+          </mp-uploader>
+        </mp-cell>
+      </mp-cells>
+    </view>
+    <view class="sub-box">
+      <button formType="submit" class="submit" type="primary">提交</button>
+      <button formType="reset" class="reset" type="warn">重置</button>
+    </view>
+  </form>
+</view>

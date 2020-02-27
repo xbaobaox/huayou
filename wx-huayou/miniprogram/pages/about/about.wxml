@@ -1,0 +1,8 @@
+<!--miniprogram/pages/about/about.wxml-->
+<image src="../../images/icon/art.png" mode="widthFix" />
+<view>这是一个绘画交流教育小程序</view>
+<view>欢迎您的使用并提出宝贵意见</view>
+<view>小程序中所展示的图片均来自于网络,并未作为商业用途,如有侵权,请联系我.</view>
+<button open-type="contact">点击联系客服</button>
+<button open-type="feedback">意见反馈</button>
+<view>Version 1.0</view>

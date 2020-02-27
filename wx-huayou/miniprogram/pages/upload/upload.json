@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "mp-toptips": "../../weui/toptips/toptips",
+    "mp-uploader": "../../weui/uploader/uploader",
+    "mp-cells": "../../weui/cells/cells",
+    "mp-cell": "../../weui/cell/cell",
+    "mp-dialog": "../../weui/dialog/dialog",
+    "mp-loading": "../../weui/loading/loading"
+  }
+}

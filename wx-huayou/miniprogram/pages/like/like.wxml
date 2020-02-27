@@ -1,0 +1,4 @@
+<view class="nullLike" wx:if="{{img.length === 0}}">您的点赞记录为空</view>
+<view class="img-box">
+  <image wx:for="{{img}}" src="{{item.src}}" class="like-img"  bindtap="detailData" data-item="{{item}}"></image>
+</view>

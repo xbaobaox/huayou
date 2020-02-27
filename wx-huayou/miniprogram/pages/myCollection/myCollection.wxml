@@ -1,0 +1,8 @@
+<!--miniprogram/pages/myCollection/myCollection.wxml-->
+<view class="nullColl" wx:if="{{collData.length===0}}">您的收藏记录为空</view>
+<view class="img-box">
+  <mp-slideview buttons="{{slideButtons}}" wx:for="{{collData}}" wx:key="index" class="delButton" data-index="{{index}}" bindbuttontap="clickDel">
+    <image src="{{item.src}}" class="img" data-item="{{item.src}}" bindtap="download" >
+    </image>
+  </mp-slideview>
+</view>

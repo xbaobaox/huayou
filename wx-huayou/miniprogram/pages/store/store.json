@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "mp-dialog": "../../weui/dialog/dialog",
+    "mp-actionSheet": "../../weui/actionsheet/actionsheet"
+  }
+}

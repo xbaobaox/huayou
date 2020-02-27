@@ -1,0 +1,200 @@
+/* miniprogram/pages/store/store.wxss */
+@import "../../weui/weui-wxss/dist/style/weui.wxss";
+
+page {
+  background-color: #f6f6f6;
+}
+
+.image {
+  width: 414px;
+  height: 150px;
+}
+
+.swiper {
+  transform: scale(0.9);
+  margin-bottom: 70rpx;
+}
+
+.mask {
+  position: absolute;
+  width: 100%;
+}
+
+.style_top {
+  height: 190rpx;
+  background: #fb7299;
+}
+
+.style_bott {
+  height: 110rpx;
+  background: rgb(201, 206, 201);
+}
+
+.goods-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.goods-name {
+  margin-bottom: 10rpx;
+}
+
+.all-num {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+}
+
+.counts {
+  color: #333;
+  margin-left: 30rpx;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shop_title {
+  margin: 20rpx 0 0 30rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #555;
+}
+
+.cont {
+  margin: 30rpx;
+  width: 315rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 330rpx; */
+  background-color: #fff;
+  border-radius: 12rpx;
+}
+
+.cont_image {
+  width: 125px;
+  height: 125px;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  border-radius: 12rpx;
+}
+
+.title {
+  color: #333;
+  font-size: 28rpx;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+}
+
+.bottom text {
+  font-size: 24rpx;
+  color: #777;
+}
+
+.bottom .total {
+  margin-left: 70rpx;
+  color: red;
+}
+
+.showStyle {
+  padding: 0 30rpx;
+}
+
+.goods-head {
+  display: flex;
+  margin-top: 30rpx;
+}
+
+.surplus {
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+
+.goods-img {
+  width: 150rpx;
+  height: 150rpx;
+  margin-right: 30rpx;
+}
+
+.need-num {
+  color: #fb7299;
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+
+.num {
+  color: #555;
+  font-size: 24rpx;
+}
+
+.compute-box {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: #555;
+  margin-top: 30rpx;
+}
+
+.compute {
+  display: flex;
+  align-items: center;
+}
+
+.sub, .add {
+  width: 50rpx;
+  height: 40rpx;
+  background-color: rgb(253, 253, 253);
+  border: 2rpx solid rgb(197, 197, 197);
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 24rpx;
+}
+
+.computed {
+  width: 55rpx;
+  height: 40rpx;
+  border-top: 2rpx solid rgb(216, 216, 216);
+  border-bottom: 2rpx solid rgb(216, 216, 216);
+}
+
+.expend-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #555;
+  margin-top: 30rpx;
+}
+
+.expend-name, .expend {
+  font-size: 24rpx;
+}
+
+.half-screen {
+  width: 100%;
+  left: 0 !important;
+  bottom: 20rpx !important;
+}
+
+.half-screen .weui-dialog__hd {
+  display: none;
+}
+
+.half-screen .weui-dialog__bd {
+  padding: 0;
+}
+
+.half-screen .weui-dialog {
+  width: 100%;
+  position: absolute;
+  bottom: -30rpx;
+  border-radius: 0;
+}
